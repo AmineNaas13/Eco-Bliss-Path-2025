@@ -1,7 +1,7 @@
 describe('Check the product view', () => {
   const username = "test2@test.fr";
   const password = "testtest";
-  // vister la pagede connexion
+  // vister la page de connexion
   beforeEach(() => {
     cy.visit('http://localhost:8080/#/')
     cy.get('[data-cy="nav-link-login"]').should('exist').click()

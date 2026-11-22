@@ -22,7 +22,7 @@ describe('Display', () => {
       })
 
   });
-  // Vérifier l'affichage après clique sur "Vos les produits"
+  // Vérifier l'affichage après clique sur "Vos produits"
   it('display de la section NOS PRODUITS', () => {
     cy.contains("Voir les produits").click()
     cy.get('.list-products').should('be.visible').and('exist')
@@ -39,7 +39,6 @@ describe('Display', () => {
     cy.get('[data-cy="detail-product-price"]').should('be.visible')
     cy.get('[data-cy="detail-product-stock"]').should('be.visible')
     cy.get('[data-cy="detail-product-add"]').should('be.visible').and('exist').click()
-
 
 
   });
